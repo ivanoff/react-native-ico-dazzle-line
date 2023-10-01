@@ -1,5 +1,6 @@
 declare module 'react-native-ico-dazzle-line' {
     import { ReactNode } from 'react';
+    import { SvgProps, AdditionalProps } from 'react-native-svg';
 
     type iconNames = 'address-book' |
       'address-card' |
@@ -1749,7 +1750,7 @@ declare module 'react-native-ico-dazzle-line' {
       badge?: number | string | badgeTypeObj;
     }
 
-    const Icon: (props: IconProps) => ReactNode;
+    const Icon: (props: IconProps & SvgProps & AdditionalProps) => ReactNode;
 
     export { iconNames };
     export default Icon;
