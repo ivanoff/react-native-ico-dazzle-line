@@ -4,7 +4,7 @@
 
 1716 Vector Icons for React Native
 
-<img src="./static/airpods-alt.png" alt="airpods-alt" width="150" height="150"> <img src="./static/airpods.png" alt="airpods" width="150" height="150"> <img src="./static/alarm-clock-alt.png" alt="alarm-clock-alt" width="150" height="150">
+<img src="./static/frankenstein.png" alt="frankenstein" width="150" height="150"> <img src="./static/phone-pause-alt.png" alt="phone-pause-alt" width="150" height="150"> <img src="./static/skull-crossbones.png" alt="skull-crossbones" width="150" height="150">
 
 ## List of icons
 
@@ -20,14 +20,14 @@ import Icon from 'react-native-ico-dazzle-line';
 render() {
     return (
         <>
-          <Icon name="airpods-alt" />
-          <Icon name="airpods" height="40" width="40" />
-          <Icon name="alarm-clock-alt" color="red" />
-          <Icon name="alarm-clock-alt" colors={{ "#000000": "#FFFFFF" }} />
-          <Icon name="airpods" badge="10" />
-          <Icon name="airpods" badge={{value: 'A', fontSize: 25, radius: 22, position:'top_left', color:'orange', backgroundColor:'blue'}}/>
-          <Icon name="airpods-alt" background="circle" />
-          <Icon name="airpods-alt" background={{ type: "button", color: 'green' }} />
+          <Icon name="frankenstein" />
+          <Icon name="phone-pause-alt" height="40" width="40" />
+          <Icon name="skull-crossbones" color="red" />
+          <Icon name="skull-crossbones" colors={{ "#000000": "#FFFFFF" }} />
+          <Icon name="phone-pause-alt" badge="10" />
+          <Icon name="phone-pause-alt" badge={{value: 'A', fontSize: 25, radius: 22, position:'top_left', color:'orange', backgroundColor:'blue'}}/>
+          <Icon name="frankenstein" background="circle" />
+          <Icon name="frankenstein" background={{ type: "button", color: 'green' }} />
         </>
     );
 }
@@ -54,7 +54,9 @@ npm install --save react-native-ico-dazzle-line react-native-svg
 react-native link react-native-svg
 ```
 
-### pod install ( for iOS )
+`react-native-svg` is a peer dependency. Install a current version in the app so the package uses the app-level native module instead of pulling in an older nested copy.
+
+### pod install (for iOS)
 
 ```
 cd ios && pod install && cd ..
@@ -68,9 +70,9 @@ Returns a SvgXml icon by name and group.
 
  name | optional | default value | description | examples
 ------|----------|---------------|-------------|---------
-name | no |  | name of icon | "airpods-alt"
+name | no |  | name of icon | "frankenstein"
 color | yes | | line color, css style | "#00ff00", "#0f0", "green"
-colors | yes | | replace colors | {"#FFFFFF": "#000000"} // white to black
+colors | yes | | replace colors | {"#FFFFFF": "#000000", "#f00": "#00f"} // white to black, red to blue
 width | yes | 20 | width of the icon | 40
 height | yes | 20 | height of the icon | 40
 background | yes | | background type | "circle"
